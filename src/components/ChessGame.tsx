@@ -31,7 +31,7 @@ const ChessGame = () => {
 
   const resetGame = async () => {
     try {
-      const response = await fetch("http://localhost:8080/api/chess", {
+      const response = await fetch("https://port-0-fchess-backend-m888iwgwdf3b8b16.sel4.cloudtype.app/api/chess", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -70,7 +70,7 @@ const ChessGame = () => {
 
   const makeMove = async (sourceSquare: string, targetSquare: string) => {
     try {
-      const response = await fetch("http://localhost:8080/api/chess/move", {
+      const response = await fetch("https://port-0-fchess-backend-m888iwgwdf3b8b16.sel4.cloudtype.app/api/chess/move", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
