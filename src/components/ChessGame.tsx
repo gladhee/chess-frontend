@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Chessboard } from "react-chessboard";
-import { Square, Piece } from "react-chessboard/dist/chessboard/types";
+import { Square } from "react-chessboard/dist/chessboard/types";
 
 interface GameState {
   position: string; // FEN 문자열
